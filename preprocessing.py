@@ -15,6 +15,7 @@ from nltk.tokenize import word_tokenize
 # Pastikan resource NLTK tersedia
 try:
     nltk.download("punkt", quiet=True)
+    nltk.download("punkt_tab", quiet=True)
     nltk.download("stopwords", quiet=True)
 except:
     pass
