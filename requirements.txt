@@ -1,0 +1,15 @@
+streamlit
+joblib
+pandas
+numpy
+matplotlib
+seaborn
+altair
+streamlit-option-menu
+wordcloud
+Pillow
+scikit-learn
+nltk
+Sastrawi
+requests
+tqdm
