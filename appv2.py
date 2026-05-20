@@ -71,7 +71,7 @@ def highlight_max_sentiment_visual(s):
 
 @st.cache_data(show_spinner=False)
 def calculate_dashboard_metrics(_svm_model, _tfidf_vec, _lda_model, _cv_vec, corpus):
-    corpus_list = corpus.astype(str).tolist()
+    corpus_list = [str(x) if pd.notna(x) else "" for x in corpus]
     X_tfidf = _tfidf_vec.transform(corpus_list)
     y_pred = _svm_model.predict(X_tfidf)
     X_cv = _cv_vec.transform(corpus_list)
