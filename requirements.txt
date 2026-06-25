@@ -8,7 +8,7 @@ altair
 streamlit-option-menu
 wordcloud
 Pillow
-scikit-learn==1.6.1
+scikit-learn
 nltk
 Sastrawi
 requests
